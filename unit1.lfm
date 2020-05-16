@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 502
+  Height = 258
+  Top = 200
+  Width = 336
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  Caption = 'CaesarCryptar'
+  ClientHeight = 258
+  ClientWidth = 336
+  LCLVersion = '2.0.8.0'
+  object MyMemo: TKOLMemo
+    Left = 8
+    Height = 145
+    Top = 8
+    Width = 320
+    IgnoreDefault = False
+    TabOrder = 0
+    Font.FontName = 'Arial'
+    parentFont = False
+    Options = [eo_NoHScroll, eo_UpperCase]
+  end
+  object ButtonEncrypt: TKOLButton
+    Left = 7
+    Height = 25
+    Top = 192
+    Width = 321
+    TabOrder = 2
+    Caption = 'Encrypt'
+    Font.FontName = 'Arial'
+    parentFont = False
+    OnClick = ButtonEncryptClick
+  end
+  object MyDropDown: TKOLComboBox
+    Left = 8
+    Height = 22
+    Hint = 'The shift to use when encrypting and decrypting.'
+    Top = 160
+    Width = 320
+    TabOrder = 1
+    Caption = '3'
+    Font.FontName = 'Arial'
+    parentFont = False
+    OnClick = MyDropDownClick
+    Options = [coReadOnly, coNoIntegralHeight]
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+      '11'
+      '12'
+      '13'
+      '14'
+      '15'
+      '16'
+      '17'
+      '18'
+      '19'
+      '20'
+      '21'
+      '22'
+      '23'
+      '24'
+      '25'
+      '26'
+    )
+  end
+  object ButtonDecrypt: TKOLButton
+    Left = 7
+    Height = 25
+    Top = 224
+    Width = 321
+    TabOrder = 3
+    Caption = 'Decrypt'
+    Font.FontName = 'Arial'
+    parentFont = False
+    OnClick = ButtonDecryptClick
+  end
+  object KOLProject: TKOLProject
+    projectName = 'project1'
+    projectDest = 'project1'
+    sourcePath = 'C:\Users\GirkovArpa\Documents\GitHub\caesar-cryptar\'
+    outdcuPath = 'C:\Users\GirkovArpa\Documents\GitHub\caesar-cryptar\'
+    NewIF = False
+    DefaultFont.FontName = 'Arial'
+    left = 8
+    top = 8
+  end
+  object KOLForm1: TKOLForm
+    Caption = 'CaesarCryptar'
+    UnitSourcePath = 'C:\Users\GirkovArpa\Documents\GitHub\caesar-cryptar\'
+    formUnit = 'unit1'
+    formMain = True
+    CanResize = False
+    CenterOnScreen = True
+    minimizeIcon = False
+    maximizeIcon = False
+    Font.FontName = 'Arial'
+    Font.FontQuality = fqAntialiased
+    FontDefault = False
+    left = 40
+    top = 8
+  end
+end
