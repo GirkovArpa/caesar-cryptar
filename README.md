@@ -8,4 +8,8 @@ This particular program, without the icon, is a mere ~50KB.
 
 That's over 30x smaller than using the regular Lazarus control library, and over 100x smaller than using C++ Builder's VCL library.
 
+It's probably possible to reduce the size from 50KB to 3KB by writing directly for the Win32 API without the help of a WYSIWYG IDE.
+
+But I'm not about that lyfe.
+
 ![GIF from Imgur](https://i.imgur.com/jBUIKNR.gif)
